@@ -1,0 +1,21 @@
+//color palette
+$blackBg: #212426;
+$blackCard: #1e2123;
+$yellow: #ebc7ab;
+$darkYellow: rgba(249, 211, 180, 0.4);
+
+//gradients
+$titleGradient: linear-gradient(
+  93.91deg,
+  #f9d3b4 0.6%,
+  rgba(249, 211, 180, 0) 103.49%
+);
+//shadows
+$cardShadow: -12px -12px 31px rgba(255, 255, 255, 0.05),
+  12px 12px 18px rgba(0, 0, 0, 0.1);
+$logoShadow: -6px -6px 21px rgba(255, 255, 255, 0.05),
+  6px 6px 8px rgba(0, 0, 0, 0.1);
+
+//Fonts
+$titleFont: Arial, Helvetica, sans-serif;
+$bodyFont: "Times New Roman", Times, serif;

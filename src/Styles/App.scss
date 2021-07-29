@@ -1,0 +1,58 @@
+@import "./Mixins.scss";
+@import "../Variables//Variables.scss";
+main {
+  padding: 5rem;
+}
+.card {
+  padding: 3rem;
+  background: $blackCard;
+  box-shadow: $cardShadow;
+  border-radius: 1rem;
+}
+.card__title {
+  @include flex(row, flex-start, center);
+  h1 {
+    font-size: 10rem;
+    padding: 0;
+    margin: 0;
+    background: $titleGradient;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  span {
+    color: $darkYellow;
+    font-size: 2rem;
+    margin-left: 1rem;
+  }
+}
+.card__info {
+  margin-top: 5rem;
+  @include flex(row, space-between, center);
+}
+.card__info__description {
+  ul {
+    padding: 0;
+    list-style: none;
+    color: $darkYellow;
+    font-size: 2rem;
+  }
+}
+.card__info__logo {
+  @include flex(row, center, center);
+  img {
+    max-height: 90px;
+    padding: 1.2rem;
+    border-radius: 1.5rem;
+    border: 4px solid rgba(0, 0, 0, 0.05);
+    box-shadow: $logoShadow;
+    box-sizing: border-box;
+    background-color: $blackBg;
+  }
+  span {
+    color: $darkYellow;
+    font-size: 4rem;
+    margin-left: 1rem;
+    font-weight: 200;
+    text-transform: uppercase;
+  }
+}
